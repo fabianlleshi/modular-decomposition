@@ -26,14 +26,14 @@ main() constructs six small graphs (K4, K3,2, a tree, a nested example, C5, and 
 
 ### Complexity
 
-LBFS: each vertex/edge handled O(1) times with constant-time block ops → O(n+m).
+LBFS: each vertex/edge handled O(1) times with constant-time block ops -> O(n+m).
 
-Assembly: each vertex scans its neighbors once, using epoch bits for cross/consistency checks → O(m).
+Assembly: each vertex scans its neighbors once, using epoch bits for cross/consistency checks -> O(m).
 
-MD tree: ≤ 2n−1 nodes; dynamic arrays grow geometrically → O(n).
+MD tree: ≤ 2n−1 nodes; dynamic arrays grow geometrically -> O(n).
 
 ### Example Output
-
+```
 == Clique4 ==
 (0, 1, 2, 3) SERIES
   3
@@ -52,6 +52,7 @@ verify: True
     3
   0
 verify: True
+```
 
 ### Notes
 
