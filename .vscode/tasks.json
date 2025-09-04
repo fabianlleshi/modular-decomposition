@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build md.exe",
+      "type": "process",
+      "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+      "args": [
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-function",
+        "${workspaceFolder}\\modular_decomposition.c",
+        "-o",
+        "${workspaceFolder}\\md.exe",
+        "-v"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PATH": "C:\\msys64\\mingw64\\bin;C:\\msys64\\usr\\bin;${env:PATH}"
+        }
+      },
+      "problemMatcher": ["$gcc"],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}

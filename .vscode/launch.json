@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run md.exe",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/md.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+      "preLaunchTask": "Build md.exe",
+      "stopAtEntry": false
+    }
+  ]
+}
